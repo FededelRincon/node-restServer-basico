@@ -12,13 +12,15 @@ const usuariosGet = (req = request, res = response) => {
     // });
 
     // const query = req.query;
-    const { q, nombre = 'valor por defecto', apikey} = req.query;
+    const { q, nombre = 'valor por defecto', apikey, page = 1, limit} = req.query;
 
     res.json({
         msg: 'get API - controlador',
         q,
         nombre,
-        apikey
+        apikey,
+        page,
+        limit
     });
 }
 
