@@ -87,7 +87,8 @@ const usuariosDelete = async (req, res = response) => {
     // const usuario = await Usuario.findByIdAndDelete( id );
 
     //DEJARLO INACCESIBLE PERO SIN BORRARLO - recomendado
-    const usuario = await Usuario.findByIdAndUpdate( id, { estado: false } )
+    const usuario = await Usuario.findByIdAndUpdate( id, { estado: false }, { new:true } )
+
 
     res.json({
         usuario
