@@ -1,9 +1,14 @@
 # WebServer + RestServer
 
-para ejecutar hacer:
-```npm install ```
+Funcionalidades:
+* JWT
+* google sign in
+* upload files a cloudinary
+* Y lo esperado de un backend de practica: 3 modelos (categorias, productos, usuarios) conectados
 
-rutas basicas: 
-http://localhost:8080/api/usuarios
+Documentacion con las url usadas en postman: 
+https://documenter.getpostman.com/view/12930996/UVJeEbE6
 
-http://localhost:8080/api/usuarios?q=hola&apikey=123456789
+
+Direccion en produccion del backend: 
+https://restserver-node-fdr.herokuapp.com/
